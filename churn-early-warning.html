@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Churn Early Warning System | Jeffrey Greene | Growth Analytics Portfolio</title>
+  <meta name="description" content="Churn Early Warning System — Risk scoring + weekly save list to make retention proactive."/>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <strong>Jeffrey Greene</strong>
+        <span>Growth Analytics Portfolio</span>
+      </a>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="playbooks.html">Playbooks</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    
+    <section class="section">
+      <div class="breadcrumb"><a href="../projects.html">Projects</a> / Case study</div>
+      <h1 style="margin-top:12px;">Churn Early Warning System</h1>
+      <p class="subhead">Risk scoring + weekly save list to make retention proactive.</p>
+      <div class="grid cols-2" style="margin-top:14px;">
+        <div class="panel">
+          <div class="h2">At a glance</div>
+          <div class="small">Primary KPI + guardrails, documented assumptions, and a weekly operating rhythm.</div>
+          <div class="meta" style="margin-top:10px; gap:8px;">
+            <span class="pill">Primary: retention lift vs holdout</span><span class="pill">Save rate</span><span class="pill">Cost per save</span><span class="pill">Incremental profit</span><span class="pill">Guardrails: unsubscribes, margin %</span>
+          </div>
+          <div class="hr"></div>
+          <div class="small"><strong>Tools</strong></div>
+          <div class="meta" style="margin-top:8px;"><span class="pill">SQL</span><span class="pill">Python</span><span class="pill">Power BI</span></div>
+          <div class="hr"></div>
+          <div class="small"><strong>Artifacts</strong></div>
+          <div class="meta" style="margin-top:8px;"><span class="pill good">Dashboard</span><span class="pill good">Notebook</span><span class="pill good">SQL snippets</span><span class="pill good">Exec summary (PDF)</span></div>
+          <div class="hr"></div>
+          <div class="small"><strong>Links</strong></div>
+          <div class="code">Dashboard: (add link)
+Repo: (add link)
+Exec summary PDF: (add link)</div>
+        </div>
+        <div class="panel">
+          <div class="h2">Overview</div>
+          <p class="subhead" style="margin:0;">I defined churn, engineered customer features, built an explainable risk score, and operationalized it as a weekly action queue. The output is a dashboard and playbook that prioritizes outreach, caps discount spend, and measures incremental retention lift with holdouts.</p>
+          <div class="hr"></div>
+          <div class="callout">
+            <div class="small"><strong>Bottom line</strong></div>
+            <div class="subhead" style="margin:6px 0 0; color:var(--text);">If we do nothing, the business keeps arguing about the numbers. If we do this, the decision becomes measurable and repeatable.</div>
+          </div>
+        </div>
+      </div>
+      
+        <div class="hr"></div>
+        <div class="h3">The problem</div>
+        <p class="subhead" style="margin:0;">Retention was reactive: churn showed up after customers disappeared, and incentives were spent without clear prioritization or measurement.</p>
+        
+        <div class="hr"></div>
+        <div class="h3">What I built</div>
+        <p class="subhead" style="margin:0;">A feature table (recency, frequency, monetary, discount behavior), a churn label (e.g., no purchase in 90 days), an explainable model score, and a weekly top‑risk list with tiered actions.</p>
+        
+        <div class="hr"></div>
+        <div class="h3">Key insights</div>
+        <p class="subhead" style="margin:0;">Risk is concentrated. Targeting the top risk decile is materially more efficient than broad discounting—especially when actions are tiered and capped.</p>
+        
+        <div class="hr"></div>
+        <div class="h3">Recommendation</div>
+        <p class="subhead" style="margin:0;">Run a 4‑week pilot on the top 10% risk segment with 10% holdouts in each tier. Track saves, cost per save, and incremental profit weekly.</p>
+        
+        <div class="hr"></div>
+        <div class="h3">Next iteration</div>
+        <p class="subhead" style="margin:0;">Add richer signals (web/app events), and test uplift modeling once measurement infrastructure is established.</p>
+        
+    </section>
+    
+  </main>
+  <footer class="container footer">
+    © 2026 Jeffrey Greene · Insight → Test → Rollout → Measurement · SQL · Python · Tableau · Power BI · (and a little R)
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

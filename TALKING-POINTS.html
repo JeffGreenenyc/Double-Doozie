@@ -1,0 +1,21 @@
+/* ── TALKING POINTS ── */
+.talking-box{background:#FFF8E1;border-left:5px solid var(--gold);border-radius:0 10px 10px 0;padding:24px 28px;margin-bottom:24px;box-shadow:var(--shadow)}
+.talking-label{font-size:.75rem;font-weight:800;color:#F57F17;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
+.talking-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.talking-item h5{font-size:.82rem;font-weight:800;color:var(--navy);margin-bottom:6px;text-transform:uppercase;letter-spacing:.3px}
+.talking-item p{font-size:.87rem;color:var(--text);line-height:1.65}
+
+
+<div class="talking-box">
+  <div class="talking-label">&#127775; Interview Talking Points — How to Explain This Project</div>
+  <div class="talking-grid">
+    <div class="talking-item"><h5>What problem were you solving?</h5><p>Businesses lose 20&ndash;30% of customers every year without knowing which ones or why. I wanted to build a system that flags customers likely to leave <em>before</em> they actually do &mdash; early enough to do something about it.</p></div>
+    <div class="talking-item"><h5>What data did you use?</h5><p>The UCI Online Retail dataset &mdash; 541,000 real transactions from a UK retailer over one year. I used purchase history to calculate how recently, how often, and how much each customer spent.</p></div>
+    <div class="talking-item"><h5>What did you find?</h5><p>49% of customers were at high churn risk, and they represented &pound;924K in recoverable revenue. The top 22% of customers (Champions) drove 64.6% of all revenue &mdash; yet they were getting the same emails as people who hadn&apos;t bought in 6 months.</p></div>
+    <div class="talking-item"><h5>What would you recommend?</h5><p>Stop sending everyone the same message. Champions need VIP treatment, not discount codes. At-Risk customers need a personal win-back offer. Lost customers need one last-chance email &mdash; then remove them from your list. Each segment gets its own playbook.</p></div>
+    <div class="talking-item"><h5>What technique did you use?</h5><p>I used RFM scoring (Recency, Frequency, Monetary) to segment customers, then built a Random Forest machine learning model to predict who would churn. The model achieved an AUC of 0.77, meaning it correctly identifies at-risk customers 77% of the time.</p></div>
+    <div class="talking-item"><h5>Why does it matter to the business?</h5><p>Every percentage point of churn you prevent is pure recovered revenue. If 15% of at-risk customers respond to a re-engagement campaign at an average order of &pound;480, that&apos;s &pound;139K without acquiring a single new customer. Retention is almost always cheaper than acquisition.</p></div>
+    <div class="talking-item"><h5>What was the hardest part?</h5><p>Avoiding data leakage. My first model had a perfect AUC of 1.0 &mdash; which sounds great but is actually a warning sign. The churn label and the Recency feature were measuring the same thing. I fixed it by training on months 1&ndash;10 and labeling churn on months 11&ndash;12.</p></div>
+    <div class="talking-item"><h5>What would you do with real company data?</h5><p>Connect it to live CRM data (Salesforce, HubSpot) so the model re-scores customers every month automatically. Set up triggered email workflows so at-risk customers get a win-back sequence without anyone manually pulling a list.</p></div>
+  </div>
+</div>
