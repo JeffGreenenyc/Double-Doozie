@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Channel Truth Dashboard | Jeffrey Greene | Growth Analytics Portfolio</title>
-  <meta name="description" content="Channel Truth Dashboard — Performance, cohorts, and budget moves that follow the data (not the loudest opinion)."/>
+  <meta name="description" content="Channel Truth Dashboard — Cuts through attribution noise to show which channels actually drive revenue and quality customers."/>
   <link rel="stylesheet" href="../assets/styles.css" />
 </head>
 <body>
@@ -25,63 +25,66 @@
     </div>
   </header>
   <main class="container">
-    
     <section class="section">
       <div class="breadcrumb"><a href="../projects.html">Projects</a> / Case study</div>
-      <h1 style="margin-top:12px;">Channel Truth Dashboard</h1>
-      <p class="subhead">Performance, cohorts, and budget moves that follow the data (not the loudest opinion).</p>
+      <span class="status-banner in-progress" style="margin-top:14px;">
+        <span class="pulse"></span>In Progress · Q3 2026
+      </span>
+      <h1 style="margin-top:8px;">Channel Truth Dashboard</h1>
+      <p class="subhead">Cuts through attribution noise to show which channels actually drive revenue and quality customers.</p>
+
+      <div class="coming-soon-hero">
+        <div class="small" style="letter-spacing:.3px; text-transform:uppercase;">Currently in development</div>
+        <div class="big">Real data. Real charts. Coming Q3 2026.</div>
+        <p class="subhead" style="margin:0 auto; max-width:60ch;">
+          A governed marketing dashboard that ties spend to revenue with a consistent channel taxonomy, a transparent attribution heuristic, and cohort quality layered on top — so budget decisions stop being arguments and start being measurable.
+        </p>
+        <div class="progress-bar" style="max-width:360px; margin-left:auto; margin-right:auto;">
+          <span style="width:15%"></span>
+        </div>
+        <div class="small">Planning complete · dataset selected · build starts after Churn Early Warning ships</div>
+      </div>
+
       <div class="grid cols-2" style="margin-top:14px;">
         <div class="panel">
-          <div class="h2">At a glance</div>
-          <div class="small">Primary KPI + guardrails, documented assumptions, and a weekly operating rhythm.</div>
-          <div class="meta" style="margin-top:10px; gap:8px;">
-            <span class="pill">Primary: MER/ROAS</span><span class="pill">CAC (new)</span><span class="pill">Revenue per acquired customer (60–90d)</span><span class="pill">Guardrails: margin %, refunds, new customer volume</span>
-          </div>
+          <div class="h2">What this case study will show</div>
+          <ul class="list">
+            <li>Unified channel taxonomy (UTM/source mapping) across paid and organic</li>
+            <li>Last non-direct attribution within a 7-day window — explainable, not magical</li>
+            <li>Primary KPI: MER/ROAS · Secondary: CAC, revenue per acquired customer (60–90 day)</li>
+            <li>Cohort quality overlay so high-ROAS-but-low-retention channels get flagged</li>
+            <li>Weekly ops view + monthly strategy view in a single Power BI report</li>
+          </ul>
           <div class="hr"></div>
           <div class="small"><strong>Tools</strong></div>
-          <div class="meta" style="margin-top:8px;"><span class="pill">SQL</span><span class="pill">Python</span><span class="pill">Power BI</span></div>
-          <div class="hr"></div>
-          <div class="small"><strong>Artifacts</strong></div>
-          <div class="meta" style="margin-top:8px;"><span class="pill good">Dashboard</span><span class="pill good">Notebook</span><span class="pill good">SQL snippets</span><span class="pill good">Exec summary (PDF)</span></div>
-          <div class="hr"></div>
-          <div class="small"><strong>Links</strong></div>
-          <div class="code">Dashboard: (add link)
-Repo: (add link)
-Exec summary PDF: (add link)</div>
+          <div class="meta" style="margin-top:8px;"><span class="pill ">SQL</span><span class="pill ">Python</span><span class="pill ">Power BI</span><span class="pill ">DAX</span></div>
         </div>
         <div class="panel">
-          <div class="h2">Overview</div>
-          <p class="subhead" style="margin:0;">I built a single source of truth that ties marketing spend to revenue outcomes with consistent channel taxonomy, time windows, and documented attribution rules. I layered cohort quality on top so budget decisions account for acquisition quality—not just short‑term ROAS.</p>
-          <div class="hr"></div>
-          <div class="callout">
-            <div class="small"><strong>Bottom line</strong></div>
-            <div class="subhead" style="margin:6px 0 0; color:var(--text);">If we do nothing, the business keeps arguing about the numbers. If we do this, the decision becomes measurable and repeatable.</div>
+          <div class="h2">Build timeline</div>
+          <div class="timeline">
+            <div class="step done"><div class="dot-num">1</div><div><div class="what">Project plan & KPI tree</div><div class="when">Done</div></div></div>
+            <div class="step now"><div class="dot-num">2</div><div><div class="what">Build foundational case studies first</div><div class="when">In progress · Funnel → Lifecycle → Churn</div></div></div>
+            <div class="step "><div class="dot-num">3</div><div><div class="what">Channel taxonomy & data model</div><div class="when">After foundation ships</div></div></div>
+            <div class="step "><div class="dot-num">4</div><div><div class="what">Power BI build + cohort overlay</div><div class="when">Q3 2026</div></div></div>
+            <div class="step "><div class="dot-num">5</div><div><div class="what">Screenshots, narrative, publish</div><div class="when">Q3 2026</div></div></div>
           </div>
         </div>
       </div>
-      
-        <div class="hr"></div>
-        <div class="h3">The problem</div>
-        <p class="subhead" style="margin:0;">Spend, traffic, and conversions lived in different places with inconsistent definitions. That turned reporting into debates and budget moves into guesswork.</p>
-        
-        <div class="hr"></div>
-        <div class="h3">What I built</div>
-        <p class="subhead" style="margin:0;">A governed channel taxonomy (UTM/source mapping), a simple explainable attribution heuristic (last non‑direct within 7 days), and a KPI mart consumed by Power BI for weekly ops + monthly strategy.</p>
-        
-        <div class="hr"></div>
-        <div class="h3">Key insights</div>
-        <p class="subhead" style="margin:0;">Efficiency and cohort quality don’t always align. Some channels look efficient short‑term but acquire lower‑retention customers; cohort revenue per acquired customer belongs in budget conversations.</p>
-        
-        <div class="hr"></div>
-        <div class="h3">Recommendation</div>
-        <p class="subhead" style="margin:0;">Rebalance using a two‑factor score (efficiency + cohort quality), move spend in small steps (10–15%), and use a stop‑loss rule + weekly measurement to avoid whiplash.</p>
-        
-        <div class="hr"></div>
-        <div class="h3">Next iteration</div>
-        <p class="subhead" style="margin:0;">Add incrementality tests (geo holdouts/platform lift) and response curves to model diminishing returns more precisely.</p>
-        
+
+      <div class="callout" style="margin-top:18px;">
+        <div class="small"><strong>Why share this in-progress?</strong></div>
+        <div class="subhead" style="margin:6px 0 0; color:var(--text);">
+          Because portfolios should be honest. The three live case studies — Funnel Leak Finder, Lifecycle Segmentation,
+          and Churn Early Warning — show the foundation of my analytics craft. This project builds on that foundation,
+          and I'm publishing the plan now so the work is transparent.
+        </div>
+      </div>
+
+      <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn primary" href="../projects.html">See live case studies</a>
+        <a class="btn" href="../contact.html">Get notified when this ships</a>
+      </div>
     </section>
-    
   </main>
   <footer class="container footer">
     © 2026 Jeffrey Greene · Insight → Test → Rollout → Measurement · SQL · Python · Tableau · Power BI · (and a little R)
